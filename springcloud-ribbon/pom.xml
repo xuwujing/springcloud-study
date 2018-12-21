@@ -18,7 +18,12 @@
         <relativePath/>
     </parent>
 
-    
+    <modules>
+    	 <module>springcloud-ribbon-eureka</module>
+  		 <module>springcloud-ribbon-consumer</module>
+   		 <module>springcloud-ribbon-consumer2</module>
+   		 <module>springcloud-ribbon-consumer3</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -57,11 +62,5 @@
             </plugin>
         </plugins>
     </build>
-    <modules>
-    	<module>springcloud-ribbon-eureka</module>
-    <module>springclou
-	on-consuspringcloud-ribbon-consumermer</module>
-    <module>springcloud-ribbon-consumer2</module>
-    <module>springcloud-ribbon-consumer3</module>
-    </modules>
+    
 </project>
