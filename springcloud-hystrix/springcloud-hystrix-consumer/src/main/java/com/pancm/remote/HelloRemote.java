@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 * @author pancm
 * @date 2018年3月29日
  */
-@FeignClient(name= "springcloud-consumer2",fallback = HelloRemoteHystrix.class)//服务熔断的时候返回fallback类中的内容
+@FeignClient(name= "springcloud-hystrix-consumer2",fallback = HelloRemoteHystrix.class)//服务熔断的时候返回fallback类中的内容
 public interface HelloRemote {
     @RequestMapping(value = "/hello")
     public String hello(@RequestParam(value = "name") String name);

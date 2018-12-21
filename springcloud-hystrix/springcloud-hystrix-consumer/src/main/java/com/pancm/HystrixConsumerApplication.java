@@ -19,9 +19,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class Application {
+public class HystrixConsumerApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-		  System.out.println("第一个消费者服务启动...");
+		SpringApplication.run(HystrixConsumerApplication.class, args);
+		  System.out.println("hystrix第一个消费者服务启动...");
 	}
 }
