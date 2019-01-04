@@ -24,18 +24,21 @@ springcloud-study 是本人在学习系列springcloud的一些工程！
 
 使用maven方式将下载的工程导入IDE中，然后将需要的项目运行main方法启动即可！
 
-该工程下的每个服务都是分配了一个独立的端口，因此不会出现端口冲突问题。
+
 
 
 
 
 ## 工程说明
 
+该工程都有相应的使用文档说明！
+
 - [springcloud-eureka](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-eureka): springcloud的eureka 版本，用于服务的注册和发现。
 - [springcloud-hystrix](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-hystrix): springcloud的hystrix熔断器版本，可以处理服务的熔断防止故障扩散。
 - [springcloud-ribbon](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-ribbon):
 springcloud的ribbon版本，可以实现负载均衡功能。
 - [springcloud-feign](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-feign): springcloud的feign版本，支持服务之间的调用，同时也自带了负载均衡功能。
+- [springcloud-config](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-config): springcloud的config配置中心版本，既可以从本地获取配置信息，也可以从Git仓库获取配置。
 
 
 
