@@ -17,10 +17,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class Application {
+public class ConfigClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(ConfigClientApplication.class, args);
 		System.out.println("配置中心客户端启动成功!");
 	}
 }
