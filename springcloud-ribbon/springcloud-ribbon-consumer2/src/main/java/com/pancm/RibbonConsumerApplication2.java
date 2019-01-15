@@ -14,9 +14,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class Application {
+public class RibbonConsumerApplication2 {
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-		  System.out.println("第二个消费者服务启动...");
+		SpringApplication.run(RibbonConsumerApplication2.class, args);
+		  System.out.println("ribbon第二个消费者服务启动...");
 	}
 }

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 * @author pancm
 * @date 2018年3月29日
  */
-@FeignClient(name= "springcloud-consumer2") //指定转发的服务名称，在application.properties中进行配置
+@FeignClient(name= "springcloud-ribbon-consumer2") //指定转发的服务名称，在application.properties中进行配置
 public interface HelloRemote {
     @RequestMapping(value = "/hello")
     public String hello(@RequestParam(value = "name") String name);
