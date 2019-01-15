@@ -15,9 +15,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class Application {
+public class FeignConsumerApplication2 {
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-		  System.out.println("第二个消费者服务启动...");
+		SpringApplication.run(FeignConsumerApplication2.class, args);
+		  System.out.println("feign第二个消费者服务启动...");
 	}
 }
