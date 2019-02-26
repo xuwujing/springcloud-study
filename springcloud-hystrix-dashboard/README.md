@@ -7,5 +7,7 @@
 
 ### 使用
 
+依次运行springcloud-hystrix-dashboard-eureka和springcloud-hystrix-dashboard-consumer项目。启动成功之后，在浏览器输入 `http://localhost:9010/hystrix` ，然后在界面中的输入框中输入:`http://localhost:9010/hystrix.stream`，即可查看hystrix界面的信息，如果提示loading，那么在浏览器中输入:`http://localhost:9010/hello/pancm`进行访问，然后再刷新该界面即可查看信息！
+
 
 
