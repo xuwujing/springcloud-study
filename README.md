@@ -53,3 +53,6 @@ springcloud的ribbon版本，可以实现负载均衡功能以及制定相应的
 - [SpringCloud学习系列之一 ----- 搭建一个高可用的注册中心(Eureka)](https://blog.csdn.net/qazwsxpcm/article/details/80036519)
 
 - [SpringCloud学习系列之二 ----- 服务消费者(Feign)和负载均衡(Ribbon)](https://blog.csdn.net/qazwsxpcm/article/details/86492858)
+
+- [SpringCloud学习系列之三----- 断路器(Hystrix)和断路器监控(Dashboard)](https://xuwujing.blog.csdn.net/article/details/86598838)
+
