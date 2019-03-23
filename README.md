@@ -56,3 +56,5 @@ springcloud的ribbon版本，可以实现负载均衡功能以及制定相应的
 
 - [SpringCloud学习系列之三----- 断路器(Hystrix)和断路器监控(Dashboard)](https://xuwujing.blog.csdn.net/article/details/86598838)
 
+- [SpringCloud学习系列之四-----配置中心(Config)使用详解](https://xuwujing.blog.csdn.net/article/details/88578076)
+
