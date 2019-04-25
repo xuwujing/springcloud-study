@@ -27,8 +27,10 @@
 
     <modules>
     	 <module>springcloud-zuul-eureka</module>
-  		 <module>springcloud-zuul-consumer</module>
-   		 <module>springcloud-zuul-consumer2</module>
+  		 <module>springcloud-zuul-gateway</module>
+        <module>springcloud-zuul-server1</module>
+        <module>springcloud-zuul-server2</module>
+
     </modules>
 
 
