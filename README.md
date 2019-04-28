@@ -40,7 +40,7 @@ springcloud的ribbon版本，可以实现负载均衡功能以及制定相应的
 - [springcloud-feign](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-feign): springcloud的feign版本，支持服务之间的调用，同时也自带了负载均衡功能。
 - [springcloud-config](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-config): springcloud的config配置中心版本，既可以从本地获取配置信息，也可以从Git仓库获取配置。
 - [springcloud-config-bus](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-config-bus): springcloud的config配置中心完美使用版，结合springcloud-bus实现配置动态刷新获取，可以根据情况自行选择更新配置文件。
-
+- [springcloud-zuul](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-zuul): springcloud的zuul路由网关的基础使用版，可以实现网关的基本功能。
 
 
 
@@ -58,4 +58,6 @@ springcloud的ribbon版本，可以实现负载均衡功能以及制定相应的
 - [SpringCloud学习系列之四-----配置中心(Config)使用详解](https://xuwujing.blog.csdn.net/article/details/88578076)
 
 - [SpringCloud学习系列之五-----配置中心(Config)和消息总线(Bus)完美使用版](https://blog.csdn.net/qazwsxpcm/article/details/88803428)
+
+- [SpringCloud学习系列之六 ----- 路由网关Zuul使用教程](https://blog.csdn.net/qazwsxpcm/article/details/89504160)
 
