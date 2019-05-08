@@ -9,6 +9,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.stereotype.Component;
 
 import com.netflix.hystrix.exception.HystrixTimeoutException;
 
@@ -22,6 +23,7 @@ import com.netflix.hystrix.exception.HystrixTimeoutException;
 * @author pancm
 * @date 2019年5月7日
  */
+@Component
 public class MyFallback implements FallbackProvider {
 
 
@@ -79,4 +81,7 @@ public class MyFallback implements FallbackProvider {
 		//指定回退服务
 		return "springcloud-zuul-filter-server2";
 	}
+	
+	
+	
 }

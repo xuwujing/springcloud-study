@@ -3,6 +3,8 @@ package com.pancm.filter;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.util.ReflectionUtils;
 
 import com.netflix.zuul.context.RequestContext;
@@ -19,6 +21,7 @@ import com.netflix.zuul.context.RequestContext;
 * @author pancm
 * @date 2019年5月7日
  */
+@Component
 public class MyErrorFilter extends SendErrorFilter{
 
 	@Override
@@ -39,5 +42,14 @@ public class MyErrorFilter extends SendErrorFilter{
 		}
 		return msg;
 	}
+	
+	/**
+	 *  自定义异常过滤器
+	 */
+	@Bean
+	public MyErrorFilter errorFilter() {
+	    return new MyErrorFilter();
+	}
+	
 
 }

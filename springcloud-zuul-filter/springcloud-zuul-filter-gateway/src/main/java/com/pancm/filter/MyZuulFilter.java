@@ -4,7 +4,9 @@ package com.pancm.filter;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Component;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -23,6 +25,7 @@ import com.netflix.zuul.exception.ZuulException;
 * @author pancm
 * @date 2019年5月7日
  */
+@Component
 public class MyZuulFilter extends ZuulFilter{
 
 	@Override
@@ -70,6 +73,11 @@ public class MyZuulFilter extends ZuulFilter{
 		//即：PRE_DECORATION_FILTER_ORDER - 1;
 		//常量类都在：org.springframework.cloud.netflix.zuul.filters.support.FilterConstants 下
 		return 0;
+	}
+	
+	@Bean
+	public MyZuulFilter zuulFilter() {
+	    return new MyZuulFilter();
 	}
 
 }
