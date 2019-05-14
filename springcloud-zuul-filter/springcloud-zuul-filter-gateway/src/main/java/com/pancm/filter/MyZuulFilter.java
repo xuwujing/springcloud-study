@@ -47,16 +47,15 @@ public class MyZuulFilter extends ZuulFilter{
 		if(token==null) {
 			//使其不进行转发
 		   ctx.setSendZuulResponse(false);
-		   msg="请求失败！";
+		   msg="请求失败！原因是token为空！";
 		   ctx.setResponseBody(msg);
 		   ctx.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
 		   //或者添加一个额外参数也可以 传递参数可以使用
 //		   ctx.set("checkAuth",false);
 		}else if("1".equals(token)) {
 			throw new ZuulException("请求失败！", -1, "请求失败！");
-			
 		}
-		
+		System.out.println(msg);
 		return msg;
 	}
 

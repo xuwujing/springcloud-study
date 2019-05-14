@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -30,6 +31,7 @@ public class MyFallback implements FallbackProvider {
 
 	@Override
 	public ClientHttpResponse fallbackResponse(String route, Throwable cause) {
+
 		//标记不同的异常为不同的http状态值
 		if (cause instanceof HystrixTimeoutException) {
 			return response(HttpStatus.GATEWAY_TIMEOUT);
@@ -78,10 +80,14 @@ public class MyFallback implements FallbackProvider {
 	
 	@Override
 	public String getRoute() {
+        System.out.println("进行回退!");
 		//指定回退服务
 		return "springcloud-zuul-filter-server2";
 	}
-	
-	
+
+    @Bean
+    public MyFallback eurekaClientFallback() {
+        return new MyFallback();
+    }
 	
 }
