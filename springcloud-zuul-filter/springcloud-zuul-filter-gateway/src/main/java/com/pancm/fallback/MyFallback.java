@@ -27,7 +27,12 @@ import com.netflix.hystrix.exception.HystrixTimeoutException;
 @Component
 public class MyFallback implements FallbackProvider {
 
-
+    @Override
+    public String getRoute() {
+        System.out.println("进行回退!");
+        //指定回退服务
+        return "springcloud-zuul-filter-server2";
+    }
 
 	@Override
 	public ClientHttpResponse fallbackResponse(String route, Throwable cause) {
@@ -78,12 +83,7 @@ public class MyFallback implements FallbackProvider {
         };
     }
 	
-	@Override
-	public String getRoute() {
-        System.out.println("进行回退!");
-		//指定回退服务
-		return "springcloud-zuul-filter-server2";
-	}
+
 
     @Bean
     public MyFallback eurekaClientFallback() {

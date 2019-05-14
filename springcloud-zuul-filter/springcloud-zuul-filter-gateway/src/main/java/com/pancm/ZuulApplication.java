@@ -24,7 +24,4 @@ public class ZuulApplication {
 		SpringApplication.run(ZuulApplication.class, args);
 		 System.out.println("zuul 服务启动...");
 	}
-	
-
-	
 }

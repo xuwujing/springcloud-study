@@ -33,7 +33,7 @@ public class MyErrorFilter extends SendErrorFilter{
 			//直接复用异常处理类
 			ExceptionHolder exception = findZuulException(ctx.getThrowable());
 			System.out.println("错误信息:"+exception.getErrorCause());
-			msg+="原因是:"+exception.getErrorCause();
+			msg+="error:"+exception.getErrorCause();
 			HttpServletResponse response = ctx.getResponse();
 			response.getOutputStream().write(msg.getBytes());           	 
 		}catch (Exception ex) {
