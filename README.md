@@ -41,6 +41,7 @@ springcloud的ribbon版本，可以实现负载均衡功能以及制定相应的
 - [springcloud-config](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-config): springcloud的config配置中心版本，既可以从本地获取配置信息，也可以从Git仓库获取配置。
 - [springcloud-config-bus](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-config-bus): springcloud的config配置中心完美使用版，结合springcloud-bus实现配置动态刷新获取，可以根据情况自行选择更新配置文件。
 - [springcloud-zuul](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-zuul): springcloud的zuul路由网关的基础使用版，可以实现网关的基本功能。
+- [springcloud-zuul-filter](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-zuul-filter): springcloud的zuul路由网关的进阶使用版，可以自定义网关的过滤器和异常处理。
 
 
 
