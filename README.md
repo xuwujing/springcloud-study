@@ -46,18 +46,20 @@ springcloud的ribbon版本，可以实现负载均衡功能以及制定相应的
 
 ## 文章列表
 
-[springcloud系列博客:](https://blog.csdn.net/qazwsxpcm/article/category/8611924)
+
+[springcloud系列博客:](https://www.cnblogs.com/xuwujing/tag/springcloud/)
 
 
-- [SpringCloud学习系列之一 ----- 搭建一个高可用的注册中心(Eureka)](https://blog.csdn.net/qazwsxpcm/article/details/80036519)
+- [SpringCloud学习系列之一 ----- 搭建一个高可用的注册中心(Eureka)](https://www.cnblogs.com/xuwujing/p/10269570.html)
 
-- [SpringCloud学习系列之二 ----- 服务消费者(Feign)和负载均衡(Ribbon)](https://blog.csdn.net/qazwsxpcm/article/details/86492858)
+- [SpringCloud学习系列之二 ----- 服务消费者(Feign)和负载均衡(Ribbon)](https://www.cnblogs.com/xuwujing/p/10273989.html)
 
-- [SpringCloud学习系列之三----- 断路器(Hystrix)和断路器监控(Dashboard)](https://xuwujing.blog.csdn.net/article/details/86598838)
+- [SpringCloud学习系列之三----- 断路器(Hystrix)和断路器监控(Dashboard)](https://www.cnblogs.com/xuwujing/p/10446126.html)
 
-- [SpringCloud学习系列之四-----配置中心(Config)使用详解](https://xuwujing.blog.csdn.net/article/details/88578076)
+- [SpringCloud学习系列之四-----配置中心(Config)使用详解)](https://www.cnblogs.com/xuwujing/p/10549242.html)
 
-- [SpringCloud学习系列之五-----配置中心(Config)和消息总线(Bus)完美使用版](https://blog.csdn.net/qazwsxpcm/article/details/88803428)
+- [SpringCloud学习系列之五-----配置中心(Config)和消息总线(Bus)完美使用版)](https://www.cnblogs.com/xuwujing/p/10602687.html)
 
-- [SpringCloud学习系列之六 ----- 路由网关Zuul使用教程](https://blog.csdn.net/qazwsxpcm/article/details/89504160)
+- [SpringCloud学习系列之六 ----- 路由网关Zuul基础使用教程)](https://www.cnblogs.com/xuwujing/p/10777782.html)
 
+- [SpringCloud学习系列之七 ----- Zuul路由网关的过滤器和异常处理](https://www.cnblogs.com/xuwujing/p/10888517.html)
