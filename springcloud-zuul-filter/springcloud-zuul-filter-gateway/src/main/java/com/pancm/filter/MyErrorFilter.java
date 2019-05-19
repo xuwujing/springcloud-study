@@ -2,6 +2,7 @@ package com.pancm.filter;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -34,7 +35,11 @@ public class MyErrorFilter extends SendErrorFilter{
 			ExceptionHolder exception = findZuulException(ctx.getThrowable());
 			System.out.println("错误信息:"+exception.getErrorCause());
 			msg+="error:"+exception.getErrorCause();
+			System.out.println("msg:"+msg);
+
 			HttpServletResponse response = ctx.getResponse();
+			//设置编码
+			response.setCharacterEncoding("UTF-8");
 			response.getOutputStream().write(msg.getBytes());           	 
 		}catch (Exception ex) {
 			ex.printStackTrace();
@@ -47,6 +52,7 @@ public class MyErrorFilter extends SendErrorFilter{
 	 *  自定义异常过滤器
 	 */
 	@Bean
+	//@ConditionalOnProperty(name="zuul.SendErrorFilter.error.disable")
 	public MyErrorFilter errorFilter() {
 	    return new MyErrorFilter();
 	}

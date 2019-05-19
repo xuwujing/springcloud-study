@@ -26,12 +26,11 @@ import com.netflix.hystrix.exception.HystrixTimeoutException;
  */
 @Component
 public class MyFallback implements FallbackProvider {
+    private static  final  String SERVER_NAME="springcloud-zuul-filter-server2";
 
     @Override
     public String getRoute() {
-        System.out.println("进行回退!");
-        //指定回退服务
-        return "springcloud-zuul-filter-server2";
+        return SERVER_NAME;
     }
 
 	@Override
@@ -47,7 +46,7 @@ public class MyFallback implements FallbackProvider {
 	}
 	//处理
 	private ClientHttpResponse response(final HttpStatus status) {
-		String msg="请求失败!";
+		String msg="该"+SERVER_NAME+"服务暂时不可用!";
         return new ClientHttpResponse() {
             @Override
             public HttpStatus getStatusCode() throws IOException {

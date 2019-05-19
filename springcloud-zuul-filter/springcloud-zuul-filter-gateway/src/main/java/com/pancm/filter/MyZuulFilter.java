@@ -52,8 +52,6 @@ public class MyZuulFilter extends ZuulFilter{
 		   ctx.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
 		   //或者添加一个额外参数也可以 传递参数可以使用
 //		   ctx.set("checkAuth",false);
-		}else if("1".equals(token)) {
-			throw new ZuulException("请求失败！", -1, "请求失败！");
 		}
 		System.out.println(msg);
 		return msg;
