@@ -31,7 +31,7 @@ springcloud-study 是本人在学习系列springcloud的一些工程！
 
 ## 工程说明
 
-该工程都有相应的使用文档说明！
+每个单独工程都有相应的使用文档说明！
 
 - [springcloud-eureka](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-eureka): springcloud的eureka 版本，用于服务的注册和发现以及搭建高可用的集群示例。
 - [springcloud-hystrix](https://github.com/xuwujing/springcloud-study/tree/master/springcloud-hystrix): springcloud的hystrix熔断器版本，可以处理服务的熔断防止故障扩散。
