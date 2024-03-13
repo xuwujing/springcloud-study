@@ -197,15 +197,5 @@ public class CosBootUtil {
         return item;
     }
 
-    public static void main(String[] args) throws Exception {
-        CosBootUtil.setAccessKeyId("AKIDcBkIvqlofcvJHHCEMSVXdaMzTCDFwc8U");
-        CosBootUtil.setAccessKeySecret("IOJBtStAIoRwLDvSq5LctFA0iHfstkR5");
-        CosBootUtil.setBucketName("test-1307462009");
-        CosBootUtil.setRegion("ap-guangzhou");
-        CosBootUtil.setUrl("202403/");
-        String filePath = "D:\\image\\1.png";
-        MultipartFile file = getMulFileByPath(filePath);
-        String url = upload( file, null);
-        System.out.println(url);
-    }
+
 }
