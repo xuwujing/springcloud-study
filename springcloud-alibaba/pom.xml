@@ -32,6 +32,7 @@
 
     <modules>
         <module>springcloud-alibaba-nacos</module>
+        <module>springcloud-alibaba-nacos-feign</module>
         <module>springcloud-alibaba-sentinel</module>
         <module>springcloud-alibaba-seata</module>
         <module>springcloud-alibaba-sideca</module>
