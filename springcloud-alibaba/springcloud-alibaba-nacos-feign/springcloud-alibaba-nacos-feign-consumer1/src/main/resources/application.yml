@@ -1,0 +1,23 @@
+server:
+  port: 9001
+  
+spring:
+  application:
+    # 服务名称
+    name: springcloud-alibaba-nacos-feign-consumer1
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1
+        group: DEFAULT_GROUP
+        namespace: gdlh
+      discovery:
+        server-addr: 127.0.0.1
+        group: DEFAULT_GROUP
+        namespace: gdlh
+  config:
+    import:
+      - optional:nacos:pancm.yaml
+      - optional:nacos:pancm-@profile.name@.yaml
