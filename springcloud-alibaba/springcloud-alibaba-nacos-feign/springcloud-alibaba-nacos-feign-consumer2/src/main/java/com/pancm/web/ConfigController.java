@@ -30,10 +30,10 @@ public class ConfigController {
 
     @PostMapping("/upload")
     public String upload(@RequestParam("file") MultipartFile file) throws Exception {
-        CosBootUtil.setAccessKeyId("AKIDcBkIvqlofcvJHHCEMSVXdaMzTCDFwc8U");
-        CosBootUtil.setAccessKeySecret("IOJBtStAIoRwLDvSq5LctFA0iHfstkR5");
-        CosBootUtil.setBucketName("test-1307462009");
-        CosBootUtil.setRegion("ap-guangzhou");
+        CosBootUtil.setAccessKeyId("xxx");
+        CosBootUtil.setAccessKeySecret("xx");
+        CosBootUtil.setBucketName("xxx");
+        CosBootUtil.setRegion("xxx");
         CosBootUtil.setUrl("202403/");
         String url = CosBootUtil.upload(file, null);
         return url;
